@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basic-angular-for-trainees';
+
+  changeModel(title: any) {
+    console.log(title);
+  }
 }
