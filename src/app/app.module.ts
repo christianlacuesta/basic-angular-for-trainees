@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { SampleCrudComponent } from './sample-crud/sample-crud.component';
+import {CardModule} from 'primeng/card';
+import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { SampleCrudComponent } from './sample-crud/sample-crud.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    CardModule,
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
