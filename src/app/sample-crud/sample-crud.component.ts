@@ -16,9 +16,32 @@ export class SampleCrudComponent implements OnInit {
     job: ''
   };
 
+  trackByMethod(index: number, el:any): number {
+    return el.index;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onCreate() {
+
+    let employeeCopy = JSON.parse(JSON.stringify(this.employee))
+
+    this.employees.push(employeeCopy)
+    console.log(this.employees)
+  }
+
+  onUpdate(data: any, index: number) {
+
+    this.employees[index] = data;
+
+    console.log(this.employees[index])
+  }
+
+  onDelete(index: number) {
+    this.employees.splice(index , 1);
   }
 
 }
