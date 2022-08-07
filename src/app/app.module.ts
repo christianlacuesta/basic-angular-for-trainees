@@ -17,6 +17,7 @@ import { IndexComponent } from './index/index.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { SideBarComponent } from './layout/side-bar/side-bar.component';
 import { MainComponent } from './layout/main/main.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MainComponent } from './layout/main/main.component';
     IndexComponent,
     TopBarComponent,
     SideBarComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
