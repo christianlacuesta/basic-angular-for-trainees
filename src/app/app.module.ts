@@ -12,6 +12,8 @@ import {InputTextModule} from 'primeng/inputtext';
 import {HttpClientModule } from '@angular/common/http';
 import { SampleFormComponent } from './sample-crud/sample-form/sample-form.component';
 import { SampleTableComponent } from './sample-crud/sample-table/sample-table.component';
+import { LoginComponent } from './login/login.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SampleTableComponent } from './sample-crud/sample-table/sample-table.co
     FirstComponentComponent,
     SampleCrudComponent,
     SampleFormComponent,
-    SampleTableComponent
+    SampleTableComponent,
+    LoginComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
