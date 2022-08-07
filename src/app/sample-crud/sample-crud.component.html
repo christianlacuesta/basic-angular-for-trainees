@@ -2,25 +2,19 @@
 <p-card>
     <div class="col-12">
         <div class="grid formgrid">
-            <div class="col-3"> 
+            <div class="col-4"> 
                 <span class="p-float-label">
                     <input type="text" class="w-full" pInputText name="name" [(ngModel)]="employee.name">
                     <label>Name</label>
                 </span>                  
             </div>
-            <div class="col-3">
-                <span class="p-float-label">
-                    <input type="text" class="w-full" pInputText name="idNo" [(ngModel)]="employee.idNo">
-                    <label>Id No</label>
-                </span>  
-            </div>
-            <div class="col-3">
+            <div class="col-4">
                 <span class="p-float-label">
                     <input type="text" class="w-full" pInputText name="job" [(ngModel)]="employee.job">
                     <label>Job</label>
                 </span>  
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 <button 
                 pButton 
                 type="button" 
@@ -76,7 +70,7 @@
                     class="p-ripple p-button-raised p-button-warning w-full mt-1 mr-2" 
                     [label]="'Delete'" 
                     icon="pi pi-check"
-                    (click)="onDelete(i)"
+                    (click)="onDelete(i, employees[i])"
                     ></button>
                 </div>
             </div>

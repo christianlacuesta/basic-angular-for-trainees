@@ -9,17 +9,23 @@ import { SampleCrudComponent } from './sample-crud/sample-crud.component';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
+import {HttpClientModule } from '@angular/common/http';
+import { SampleFormComponent } from './sample-crud/sample-form/sample-form.component';
+import { SampleTableComponent } from './sample-crud/sample-table/sample-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponentComponent,
-    SampleCrudComponent
+    SampleCrudComponent,
+    SampleFormComponent,
+    SampleTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     CardModule,
     ButtonModule,
     InputTextModule
