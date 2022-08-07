@@ -14,6 +14,7 @@ import { SampleFormComponent } from './sample-crud/sample-form/sample-form.compo
 import { SampleTableComponent } from './sample-crud/sample-table/sample-table.component';
 import { LoginComponent } from './login/login.component';
 import { IndexComponent } from './index/index.component';
+import { TopBarComponent } from './layout/top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { IndexComponent } from './index/index.component';
     SampleFormComponent,
     SampleTableComponent,
     LoginComponent,
-    IndexComponent
+    IndexComponent,
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
