@@ -18,6 +18,7 @@ import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { SideBarComponent } from './layout/side-bar/side-bar.component';
 import { MainComponent } from './layout/main/main.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { SamplePunishmentComponent } from './sample-crud/sample-punishment/sample-punishment.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     TopBarComponent,
     SideBarComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    SamplePunishmentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,26 @@
-<p>side-bar works!</p>
+<button 
+pButton 
+type="button" 
+class="p-ripple p-button-raised p-button-primary w-full mt-1 mr-2" 
+[label]="'Create New Employee'" 
+icon="pi pi-check"
+(click)="changePage('')"
+></button>
+
+<button 
+pButton 
+type="button" 
+class="p-ripple p-button-raised p-button-primary w-full mt-1 mr-2" 
+[label]="'Create Punishments'" 
+(click)="changePage('punishment')"
+icon="pi pi-check"
+></button>
+
+<button 
+pButton 
+type="button" 
+class="p-ripple p-button-raised p-button-primary w-full mt-1 mr-2" 
+[label]="'View Table List'" 
+icon="pi pi-check"
+(click)="changePage('table')"
+></button>
