@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="col-12">
+    <span class="p-float-label">
+        <input type="text" class="w-full" pInputText [name]="'username'" [(ngModel)]="auth.username">
+        <label>Username</label>
+    </span> 
+    <div>user touched this</div>
+    <div>cannot be null</div>
+</div>
+
+<div class="col-12">
+    <input type="text" class="w-full" pInputText [name]="'password'" [(ngModel)]="auth.password">
+    <label>Password</label>
+    <div>user touched this</div>
+    <div>cannot be null</div>
+</div>
+<div class="col-12">
+    <button 
+pButton 
+type="button" 
+class="p-ripple p-button-raised p-button-primary w-full mt-1 mr-2" 
+[label]="'Create Punishments'" 
+icon="pi pi-check"
+></button>
+</div>
